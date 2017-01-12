@@ -8,6 +8,37 @@
   margin: 0 auto;
 }
 
+/* NAV BAR */
+
+.nav-bar {
+  background: #F55E05;
+  text-align: right;
+  height: 60px;
+}
+
+.nav-bar img {
+  display: inline-block;
+  width: 75px;
+  transform: translateX(-525px);
+  padding-top: 15px;
+}
+
+.nav-bar a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin: 0 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transform: translateY(-10px);
+}
+
+.list {
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
 /* Heading */
 
 header {
@@ -15,6 +46,12 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 200px;
+}
+
+.contrast {
+  /*background-color: rgba(36, 48, 54, 0.6);*/
+  width: 900px;
+  transform: translateX(-22.2%);
 }
 
 .heading {
@@ -62,6 +99,7 @@ form input[type=button] {
   color: #fff;
   font-size: 14px;
 }
+
 
 /* CITIES */
 
@@ -117,9 +155,38 @@ form input[type=button] {
 }
 
  .apartment {
+  position: relative;
   margin: 20px 100px;
   border: 1.5px solid #000;
   background-color: #fff;
+}
+
+.apartment .price {
+  position: absolute;
+  top:0;
+  left: 7px;
+  transform: translateY(120px);
+  margin: 0 auto;
+  background-color: rgba(36, 48, 54, 0.9);
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  width: 70px;
+  text-align: center;
+  padding: 12px 10px;
+}
+
+.apartment .heart {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  background-color: rgba(245, 94, 5, 0.8);
+  color: #fff;
+  border-radius: 50%;
 }
 
 .apartment p {
@@ -212,3 +279,63 @@ form input[type=text]:focus {
 /*@media screen and (min-width: 480px){
 
 }*/
+
+/* LIVE CHAT*/
+
+.tiffany {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  border: 4px solid #29BBAF;
+  width: 175px;
+  height: 110px;
+  font-size: 0;
+}
+
+.tiffany h5 {
+  margin: 0 auto;
+  height: 30px;
+  background: #B0E6E2;
+  padding: 8px 0 8px 4px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tiffany .triangle {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin:0 auto;
+  text-align: center;
+  font-size: 12px;
+  background-color: #29BBAF;
+  color: #fff;
+  transform: translateY(-30px);
+}
+
+.tiffany img {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  font-size: medium;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin: 20px 5px 5px;
+}
+
+
+.tiffany .chat  {
+  display: inline-block;
+  width: 65%;
+  font-size: 11px;
+  vertical-align: top;
+  margin: 30px 0;
+}
+
+.tiffany .highlight {
+  color: rgb(245, 94, 5);
+}
